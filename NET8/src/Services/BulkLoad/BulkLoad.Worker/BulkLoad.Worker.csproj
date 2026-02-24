@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-BulkLoad.Worker-999f388e-2426-4ff4-984c-aa1e68c200fe</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BulkLoad.Application\BulkLoad.Application.csproj" />
+    <ProjectReference Include="..\BulkLoad.Infrastructure\BulkLoad.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
